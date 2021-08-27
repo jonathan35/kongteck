@@ -1,0 +1,14 @@
+------------------------------DOING----------------------------------------
+modify for kongteck mockup
+
+http://fafbaby.com/saytech.com.my/ duplicate CMS product module
+
+meeting anthony
+
+1) “Driver assign manually” cannot detect customer online
+JW (8/13): I guess you want to say "detect driver", now I tested my driver account showing, later I will test this again.
+
+
+
+------------------------------DONE----------------------------------------
+washingtonaudio - take "Who We Are" from https://centrecircleaudio.com.my/ insert into washingtonaudio after banner row.
