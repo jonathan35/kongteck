@@ -20,9 +20,9 @@
 
     <div class="col-3 text-center text-md-right social-icon p-3 pl-0 pt-4">
         <div class="pt-md-2">
-            <a href="https://m.facebook.com/" target="_blank"><img src="<?php echo ROOT?>images/facebook-circle.svg"></a>
+            <a href="https://www.facebook.com/karentaltravel" target="_blank"><img src="<?php echo ROOT?>images/facebook-circle.svg"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="<?php echo ROOT?>images/instagram-circle.svg"></a>
-            <a href="https://wa.link/60168653947" target="_blank"><img src="<?php echo ROOT?>images/whatsapp-circle.svg"></a>
+            <a href="https://wa.link/0128072267" target="_blank"><img src="<?php echo ROOT?>images/whatsapp-circle.svg"></a>
         </div>
     </div>
 </div>
@@ -30,22 +30,24 @@
 <div class="menu collapse" id="toggleMenu">
     <div class="menu-inner">
         <div class="row">
-            <div class="d-none d-md-inline col-md"></div>                        
+            <div class="d-none d-md-inline col-md"></div>
             <div class="col-12 col-md p-2">
-
-            <a href="#<?php echo ROOT?>products">Products</a>
+                <a href="<?php echo ROOT?>home">Home</a>
+            </div>
+            <div class="col-12 col-md p-2">
+                <a href="<?php echo ROOT?>vehicles">For Rent</a>
+            </div>
+            <div class="col-12 col-md p-2">
+            <a href="<?php echo ROOT?>activities">Activities</a>
             </div>            
             <div class="col-12 col-md p-2">
-            <a href="#<?php echo ROOT?>news">News</a>
-            </div>            
-            <div class="col-12 col-md p-2">
-            <a href="#<?php echo ROOT?>contact_us">Contact Us</a>
+            <a href="<?php echo ROOT?>contact_us">Contact Us</a>
             </div>
             <?php 
             $pages = sql_read('select * from pages where status = ? order by position asc, id desc', 'i', 1);
             foreach((array)$pages as $page){?>
             <div class="col-12 col-md p-2">
-                <a href="#<?php echo ROOT.'page/'.$str_convert->to_url($page['title'])?>" style="text-transform: capitalize;"><?php echo $page['title']?></a>
+                <a href="<?php echo ROOT.'page/'.$str_convert->to_url($page['title'])?>" style="text-transform: capitalize;"><?php echo $page['title']?></a>
             </div>
             <?php }?>
             <div class="d-none d-md-inline col-md"></div>

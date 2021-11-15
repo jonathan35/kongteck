@@ -81,7 +81,7 @@ include_once 'head.php';
 
             <? include 'footer.php';?>        
         </div>
-    </div>                
+    </div>
             
 
 </body>

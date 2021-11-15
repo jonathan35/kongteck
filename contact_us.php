@@ -14,9 +14,9 @@ if(!empty($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['email'])
         Please fill in captcha.</div>';
     }else{
 
-        $to      = 'info@sepandco.com.my';
-        $subject = 'Website Enquiry';
-        $headers[] = 'From: sepandco.com.my';
+        $to      = 'kongteckcarrental@gmail.com';
+        $subject = 'Contact Us';
+        $headers[] = 'From: kongteck.com.my';
         $headers[] = 'MIME-Version: 1.0';
         $headers[] = 'Content-type: text/html; charset=iso-8859-1';
         $message = '<!DOCTYPE html>
@@ -24,7 +24,7 @@ if(!empty($_POST['submit']) && !empty($_POST['name']) && !empty($_POST['email'])
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
+            <title>'.$subject.'</title>
         </head>
         <body>
             Dear Staff,

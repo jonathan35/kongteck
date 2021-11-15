@@ -106,12 +106,7 @@ text-decoration: none;
   position:relative;
   left:.1%;
   padding:10px; 
-  
-  
-  /*  
-  border:1px solid #003466; 
-  background: linear-gradient(160deg, rgb(16, 95, 168) 0%, rgb(26, 47, 78) 100%);*/
-  border:1px solid #ff7b00; background-color:rgba(255, 102, 0, 0.9);
+  border:1px solid #0d1a69; background-color:rgba(13, 26, 105, 0.9);
   text-align: center;
   font-size:28px;
   color:white;
@@ -130,8 +125,11 @@ text-decoration: none;
 .carousel-control-prev {
   left:-1%;
 }
-
-
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 180px;
+  }
+}
 /* ------------------------------------- Home > Rows ------------------------------------- */
 
 .h1 {
@@ -231,38 +229,6 @@ text-decoration: none;
   }
 }
 
-.cat-trigger {
-  cursor: pointer;
-  border-radius: 50%;
-  width:40px;
-  height: 40px;
-  z-index: 4;
-  background-color: rgba(0,0,0,0.5);
- box-shadow: 0 0 6px rgba(0,0,0,0.8);
-  text-align: center;
-  padding: 7px 0 0 1px;
-  color: #EEE;
-  position: fixed;
-  right: 0;
-  top: 50vh;
-}
-
-
-@media (max-width: 575px) {
-  .category-panel {
-    visibility: hidden;
-  }
-  .category-active {
-    background:white;  
-    padding: 0;
-    padding-top: 0 !important;
-    width: 93%;
-    box-shadow: 0 0 40px black;
-    left: 2%;
-    visibility: visible;
-    position: fixed;
-  }
-}
 
 
 
@@ -317,4 +283,77 @@ text-decoration: none;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+}
+
+
+/* ------------------------------------- Vehicle ------------------------------------- */
+
+
+.cat-trigger {
+  cursor: pointer;
+  border-radius: 50%;
+  width:40px;
+  height: 40px;
+  z-index: 4;
+  background-color: rgba(0,0,0,0.5);
+ box-shadow: 0 0 6px rgba(0,0,0,0.8);
+  text-align: center;
+  padding: 7px 0 0 1px;
+  color: #EEE;
+  position: fixed;
+  right: 0;
+  top: 50vh;
+}
+
+
+@media (max-width: 575px) {
+
+  .category-panel-outter {
+    display: none;
+    z-index: 3;
+  }
+
+  .category-panel {
+    position: fixed !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height:auto;
+    max-height: 70vh;
+    background:white;
+    width: 89%;
+    box-shadow: 0 0 6px black;
+  }
+
+  .category-active {
+    display: block !important;
+    
+  }
+}
+
+
+
+.filter_menu {
+  padding:8px;
+  margin:0;
+  color:#333;
+  transition:background .5s, color .5s;
+}
+.filter_menu:hover {
+  background: #438eff;
+}
+.active_filter_menu {
+  background: #a8cbff;
+}
+
+.btn-vehicle-enquiry, .btn-vehicle-view {
+  color:#FFF; font-size:14px; cursor: pointer; background: #E85D04; transition: background .5s;
+}
+.btn-vehicle-enquiry:hover, .btn-vehicle-view:hover {
+  background: red;
+  color:#FFF;
+}
+@media (max-width: 575px) {
+  .btn-vehicle-enquiry, .btn-vehicle-view {
+    font-size:14px;
+  }
 }

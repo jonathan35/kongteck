@@ -3,10 +3,42 @@ require_once 'config/ini.php';
 require_once 'config/security.php';
 require_once 'config/str_convert.php';
 
+
+
+
+////////////////////////////// Tour Details Page - Start ///////////////////////////////       
+if(!empty($_GET['p'])){
+    $vehicle_name = $str_convert->to_query($_GET['p']);
+    $vehicle = sql_read('select * from vehicle where status=1 and vehicle like ? limit 1', 's', $vehicle_name);
+    //debug($vehicle);
+
+    if(!empty($vehicle['brand'])){
+        $brand = sql_read('select * from brand where status=1 and id=? limit 1', 'i', $vehicle['brand']);
+    }
+    if(!empty($vehicle['category'])){
+        $category = sql_read('select * from category where status=1 and id=? limit 1', 'i', $vehicle['category']);
+    }
+    if(!empty($vehicle['region'])){
+        $region = sql_read('select * from region where status=1 and id=? limit 1', 'i', $vehicle['region']);
+    }
+    
+}
+
+
+
+if(!empty($vehicle['id'])){?>
+    <meta property="og:url" content="https://kiffahborneo.com.my/vehicle_details/<?php echo $str_convert->to_url($vehicle['vehicle'])?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="kiffahborneo.com.my" />
+    <meta property="og:description" content="<?php echo $vehicle['vehicle']?>" />
+    <meta property="og:image" content="https://kiffahborneo.com.my/<?php echo $vehicle['photo']?>" />
+
+<?php }
+////////////////////////////// Tour Details Page - End /////////////////////////////// 
 ?>
 <!DOCTYPE html>
 <head>
-    <title>KA Rental Travel & Tours</title>
+    <title>Kong Teck Car Rental</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php {/**
@@ -52,7 +84,7 @@ require_once 'config/str_convert.php';
 
     <link href="<?php echo ROOT?>css/custom.css" rel="stylesheet" />
     
-    <?php /**
+    
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
     async defer></script>
     <script type="text/javascript">
@@ -62,6 +94,6 @@ require_once 'config/str_convert.php';
         });
     };
     </script>
-    */?>
+    
 
 </head>

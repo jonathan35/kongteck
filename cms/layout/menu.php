@@ -3,23 +3,33 @@
 
   <h4>Home</h4>
   <div class="nav lnav" link="../content/banner">Banner</div>
-  <div class="nav lnav" link="../content/developer">Developer</div>
-  <div class="nav lnav" link="../content/home_block">Why Choose Us?</div>
+  <div class="nav lnav" link="../content/developer">Car Brands</div>
+  <div class="nav lnav" link="../content/home_block">Why Choose Us</div>
   <!--<div class="nav lnav" link="../content/banner_dashboard?id=Mg==">Banner (Account Dashboard)</div>-->
 
+  <h4>Vehicle</h4>
+  <div class="nav lnav" link="../vehicle/vehicle">Vehicle</div>
 
-  <h4>Product</h4>
-  <div class="nav lnav" link="../product/category">Category</div>
-  <div class="nav lnav" link="../product/sub_category">Sub Category</div>
+  <div class="nav lnav" link="../vehicle/region">Region</div>
+  <div class="nav lnav" link="../vehicle/location">Location (Pickup/Dropoff)</div>
+  
+  <div class="nav lnav" link="../vehicle/brand">Brand</div>
+  
+  <div class="nav lnav" link="../vehicle/category">Category</div>
+  <!--<div class="nav lnav" link="../vehicle/sub_category">Sub Category</div>-->
+
+  <div class="nav lnav" link="../vehicle/message?tab=New">Enquiry</div>
+
+  <!--
   <div class="nav lnav" link="../product/product">Product</div>
   <div class="nav lnav" link="../product/message?tab=New">Message</div>
+  -->
 
 
-
-  <h4>Pre-desgin</h4>
+  <h4>Pre-design</h4>
   <div class="nav lnav" link="../content/contact_us?id=MQ==&no_list=true">Contact Us</div>
   <div class="nav lnav" link="../content/message_contact?tab=New">Contact Message</div>
-  <div class="nav lnav" link="../content/news">Updates</div>
+  <div class="nav lnav" link="../content/news">Activities</div>
 
   <h4>Free-Formated</h4>
   <div class="nav lnav" link="../content/pages">Pages</div>

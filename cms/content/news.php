@@ -13,7 +13,7 @@ if($_SESSION['validation']=='YES'){
 }
 
 $table = 'news';
-$module_name = 'News';
+$module_name = 'Activities';
 $php = 'news';
 $folder = 'content';
 $add = true;

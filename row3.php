@@ -1,7 +1,7 @@
 <style>
 .sp-block {width:24.6%;}
-.ap_rounded { border-radius:50%; background-color:#444; color:white; font-size:20px; padding:10px; width:76px; height:76px; margin:0 auto;}
-.ap_rounded > i { width:66%; height:66%; margin:11px auto; color:white; background-position:center; background-size:contain; background-repeat:no-repeat;}
+.ap_rounded { border-radius:50%; background-color:#444; color:white; font-size:20px; padding:3px; width:76px; height:76px; margin:0 auto;}
+.ap_rounded > i { margin:11px auto; color:white; background-position:center; background-size:contain; background-repeat:no-repeat;}
 .ap_rdhr {width:100%; text-align:center; text-decoration:none !important; padding-top:40px;}
 .ap_rdhr:hover .ap_rounded, .ap_roundActive { background-color:#961f1d;}
 
@@ -27,79 +27,72 @@
         <div class="row nopadding">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 nopadding sp-block" id="sp_r1">
                 <div class="ap_rdhr">
-                    <div class="ap_rounded ap_roundActive" id="ap_roundActive1">
-                        <i style="background-image: url(<?php echo ROOT?>photo/concept_design-white.svg); display: block;"></i>
+                    <div class="ap_rounded ap_roundActive" id="ap_roundActive1" style="padding-top:1px; ">
+                        <i style="background-image: url(<?php echo ROOT?>photo/real-estate.svg); display: block; width:66%; height:66%;"></i>
                     </div>
                     <div class="ap_text ap_textActive" id="apTitle1">
-                        Concept &amp; Design            
+                        Car rental
                     </div>
-                </div>
-                <div class="hidden-lg ap_brief" id="ap_brief1" style="display: none;">
-                    Take advantage of our experience and engineering expertise. We support you in designing your project to meet your FEED or feasibility study. Our engineers know which project requirements to meet and let you avoid costly changes during installation and commissioning.
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 nopadding sp-block" id="sp_r2">
                 <div class="ap_rdhr">
                     <div class="ap_rounded" id="ap_roundActive2">
-                        <i style="background-image: url(<?php echo ROOT?>photo/project_engineering-white.svg); display: block;"></i>
+                        <i style="background-image: url(<?php echo ROOT?>photo/tour.svg); display: block; width:66%; height:66%;"></i>
                     </div>
                     <div class="ap_text" id="apTitle2">
-                    Project Engineering          
+                    Tours      
                     </div>
-                </div>
-                <div class="hidden-lg ap_brief" id="ap_brief2" style="display: none;">
-                    Together with our local integration partners we provide project engineering services, from feasibility studies and conceptual proposals to project-specific developments and customized solutions. We combine the strength, technology and quality leadership you expect from a global leader with the flexibility and application expertise of our local partners. Our multilingual engineering team has years of project management experience that will make your project a success.
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 nopadding sp-block" id="sp_r3">
                 <div class="ap_rdhr">
-                    <div class="ap_rounded" id="ap_roundActive3">
-                        <i style="background-image: url(<?php echo ROOT?>photo/training-white_04.svg); display: block;"></i>
+                    <div class="ap_rounded" id="ap_roundActive3" style="padding-top:1px;">
+                        <i style="background-image: url(<?php echo ROOT?>photo/car.svg); display: block;width:84%; height:84%;"></i>
                     </div>
                     <div class="ap_text" id="apTitle3">
-                        Training          
+                        Used car          
                     </div>
-                </div>
-                <div class="hidden-lg ap_brief" id="ap_brief3" style="display: none;">
-                    We offer a broad range of trainings to help you understand distributed optical sensing technology (DTS, DAS, DVS) and get a comprehensive system overview. This includes many practical tips for the installation and commissioning. Training can be via the web, at your site, or in our offices in southern Germany. Contact us or call us at +49 7031 309 6699 to discuss a training plan.
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 nopadding sp-block" id="sp_r4">
                 <div class="ap_rdhr">
-                    <div class="ap_rounded" id="ap_roundActive4">
-                        <i style="background-image: url(<?php echo ROOT?>photo/field_service-white.svg); display: block;"></i>
+                    <div class="ap_rounded" id="ap_roundActive4" style="padding-top:2px;">
+                        <i style="background-image: url(<?php echo ROOT?>photo/chauffeur.svg); display: block; width:66%; height:66%;"></i>
                     </div>
                     <div class="ap_text" id="apTitle4">
-                    Technical Support         
+                    Chauffeur driven      
                     </div>
-                </div>
-                <div class="hidden-lg ap_brief" id="ap_brief4" style="display: none;">
-                    Our support does not end after the commissioning -- it goes far beyond. We offer onsite service, hotline support and maintenance. Our international field support team is built with multi-disciplined, skilled engineers who deliver on our commitments. Contact us or call us at +88 8888 888 8888 to get fast support from our qualified, multilingual Project Engineering and Support team.
                 </div>
             </div>
         </div>
         <div class="row ap_desc" id="ap_desc1" style="display: flex; font-size:95%;">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center pt-4">
-                <h3 style="font-weight:100;">Concept &amp; Design</h3>
-                Take advantage of our experience and engineering expertise. We support you in designing your project to meet your FEED or feasibility study. Our engineers know which project requirements to meet and let you avoid costly changes during installation and commissioning.
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center p-4">
+                <h3 style="font-weight:100; color:#961F1D;">At your fingertips booking</h3>
+                    Start your reservation by entering your desired date and time or the "pick-up location" and choose from range of our RG cars range and brands, available cars in different locations, and rates!
             </div>
         </div>
         <div class="row ap_desc" id="ap_desc2" style="display: none; font-size:95%;">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center pt-4">
-                <h3 style="font-weight:100;">Project Engineering</h3>
-                Together with our local integration partners we provide project engineering services, from feasibility studies and conceptual proposals to project-specific developments and customized solutions. We combine the strength, technology and quality leadership you expect from a global leader with the flexibility and application expertise of our local partners. Our multilingual engineering team has years of project management experience that will make your project a success.
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center p-4">
+                <h3 style="font-weight:100; color:#961F1D;">Welcome to Sarawak</h3>
+                    Situated in Malaysian Borneo, Sarawak is the largest state in the country. Its colourful history under the rule of the White Rajahs, rich tapestry of cultures and superb natural attractions make it a mesmerising holiday destination. Many heritage buildings in Kuching, the capital city, reflect its rich past. An eco-adventure land, Sarawak is great for trekking, caving, mountain climbing, kayaking, biking, rafting and diving.<br><br>
+                    The state has a wide range of accommodations to suit all budgets and preferences. There are international-standard beach resorts, jungle resorts, star-rated hotels as well as longhouse-style resorts. Budget accommodation is widely available. Take your pick from the variety of cuisine, from local delicacies to Continental fare.
+
             </div>
         </div>
         <div class="row ap_desc" id="ap_desc3" style="display: none; font-size:95%;">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center pt-4">
-                <h3 style="font-weight:100;">Training</h3>
-                We offer a broad range of trainings to help you understand distributed optical sensing technology (DTS, DAS, DVS) and get a comprehensive system overview. This includes many practical tips for the installation and commissioning. Training can be via the web, at your site, or in our offices in southern Germany. Contact us or call us at +49 7031 309 6699 to discuss a training plan.
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center p-4">
+                <h3 style="font-weight:100; color:#961F1D;">Anytime flexi</h3>
+                    We offer long term lease where we can package free replacement, maintenance and our ' Rent it, Love it, Buy it' offer.
+
             </div>
         </div>
         <div class="row ap_desc" id="ap_desc4" style="display: none; font-size:95%;">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center pt-4">
-                <h3 style="font-weight:100;">Technical Support</h3>
-                Our support does not end after the commissioning -- it goes far beyond. We offer onsite service, hotline support and maintenance. Our international field support team is built with multi-disciplined, skilled engineers who deliver on our commitments. Contact us or call us at +99 9999 999 9999 to get fast support from our qualified, multilingual Project Engineering and Support team.
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center p-4">
+                <h3 style="font-weight:100; color:#961F1D;">You are special to us</h3>
+                Using the latest luxury cars like Mercedes, Lexus and Vellfire<br><br>
+                (local town or long distance drive).
+
             </div>
         </div>
 
@@ -149,7 +142,7 @@ function shwAp4(){
     $('#ap_roundActive4').addClass('ap_roundActive'); 
     $('#ap_desc4').show();
 }
-ap_desc1
+
 $('#sp_r1').hover(function(){shwAp1();});
 $('#sp_r2').hover(function(){shwAp2();});
 $('#sp_r3').hover(function(){shwAp3();});
@@ -160,32 +153,32 @@ $('#sp_r1').click(function(){
     $('.ap_roundActive').removeClass('ap_roundActive');
     $('#apTitle1').addClass('ap_textActive');
     $('#ap_roundActive1').addClass('ap_roundActive');
-    $('.ap_brief').slideUp();
-    $('#ap_brief1').slideDown();
+    $('.ap_desc').hide();
+    $('#ap_desc1').slideDown();
 });
 $('#sp_r2').click(function(){
     $('.ap_textActive').removeClass('ap_textActive');
     $('.ap_roundActive').removeClass('ap_roundActive');
     $('#apTitle2').addClass('ap_textActive');
     $('#ap_roundActive2').addClass('ap_roundActive');
-    $('.ap_brief').slideUp();
-    $('#ap_brief2').slideDown();
+    $('.ap_desc').hide();
+    $('#ap_desc2').slideDown();
 });
 $('#sp_r3').click(function(){
     $('.ap_textActive').removeClass('ap_textActive');
     $('.ap_roundActive').removeClass('ap_roundActive');
     $('#apTitle3').addClass('ap_textActive');
     $('#ap_roundActive3').addClass('ap_roundActive');
-    $('.ap_brief').slideUp();
-    $('#ap_brief3').slideDown();
+    $('.ap_desc').hide();
+    $('#ap_desc3').slideDown();
 });
 $('#sp_r4').click(function(){
     $('.ap_textActive').removeClass('ap_textActive');
     $('.ap_roundActive').removeClass('ap_roundActive');
     $('#apTitle4').addClass('ap_textActive');
     $('#ap_roundActive4').addClass('ap_roundActive');
-    $('.ap_brief').slideUp();
-    $('#ap_brief4').slideDown();
+    $('.ap_desc').hide();
+    $('#ap_desc4').slideDown();
 });
 
 </script>

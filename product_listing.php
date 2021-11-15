@@ -33,7 +33,7 @@ if($_POST['i']=='best_deals'){
 }
 
 
-$count_product = @count((array)$products);
+$count_product = @count($products);
 
 ?>
 
@@ -137,7 +137,7 @@ $count_product = @count((array)$products);
                 <div class="card-body pl-3 pr-3 pt-1 product-listing-product">
                     <a href="detail?i=<?php echo $pid;?>">
                         <div class="row">
-                            <div class="col-12 mb-3 list-thumbnail">
+                            <div class="col-12 mb-3 product-thumbnail">
                                 <img class="img-fluid product-img" alt="cart item"
                                     src="<?php echo ROOT.$product['photos'][0]['photo'];?>" onerror="this.onerror=null; this.src='images/photo-gray.svg'" />
                                 <div class="overlay text-center overlay<?php echo $uid;?>">

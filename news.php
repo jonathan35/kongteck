@@ -12,7 +12,7 @@ $news = sql_read("select * from news where status = ? order by position asc, id 
         <?php include 'header.php';?>
         <div style="height:66px;">
             <div class="page_title">
-                Updates
+                Activities
             </div>
         </div>
         <div class="row wave_rec">        
@@ -39,7 +39,12 @@ $news = sql_read("select * from news where status = ? order by position asc, id 
                                             <?php echo date('M d, Y', strtotime($new['news_date']))?>
                                         </div>
                                         <div class="col-6 pb-4 text-right">
-                                            <?php echo $new['news_attachment']?>
+                                        
+                                            <?php if(!empty($new['file_attachment'])){?>
+                                                <a href="<?php echo ROOT.$new['file_attachment'];?>" target="_blank">
+                                                    <i class="fa fa-file"></i>
+                                                </a>
+                                            <?php }?>
                                         </div>
                                     </div>
                                     <div class="row">

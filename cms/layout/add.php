@@ -519,12 +519,19 @@ $('.add-trigger').click(function(){
                                 <?php }?>
                             <?php }elseif($type[$field] == 'file'){?>
                                 <div style="width:<?php echo $width[$field]?>">
-                                <?php if($_GET['id']){?>
-                                    <a href="../../<?php echo $value[$field]?>" target="_blank" style="display:inline-block; width:8%;">
-                                    <span class="glyphicon glyphicon-file"></span>
-                                    </a>
-                                <?php }?>
-                                <input type="<?php echo $type[$field]?>" name="<?php echo $field?>[]" value="<?php echo $value[$field]?>" <?php echo $attrs?> style=" display:inline-block; width:84%; <?php echo $styles?>">
+                                    <?php if(!empty($value[$field]) && $_GET['id']){?>
+                                        <a href="../../<?php echo $value[$field]?>" target="_blank" style="display:inline-block; width:8%;">
+                                        <img src="<?php echo ROOT?>cms/images/file_icon.svg">
+                                        </a>
+                                    <?php }?>
+                                    <input type="<?php echo $type[$field]?>" name="<?php echo $field?>[]" value="<?php echo $value[$field]?>" <?php echo $attrs?> style=" display:inline-block; width:84%; <?php echo $styles?>">
+                                    <div class="def_img_bg" id="preview<?php echo $field?>" style="overflow:show;">
+                                    <img src="../../<?php echo $value[$field]?>" class="img-fluid" alt="" >
+                                    <?php if(!empty($value[$field])){?>
+                                        <div class="btn btn-xs btn-danger" onclick="removeImg('<?php echo $table?>','<?php echo $id?>', '<?php echo $field?>')" 
+                                        style="margin:10px 0 20px 0;">Remove</div>
+                                    <?php }?>
+                                </div>
                                 </div>
                                 
                             <?php }elseif($type[$field] == 'password'){?>

@@ -16,13 +16,13 @@
         <div class="row d-flex pt-4 pb-5 text-left" >
 
             <div class="col-12 col-md">
-                <div class="footer-title pt-4 pt-md-2">Products</div>
+                <div class="footer-title pt-4 pt-md-2">Vehicle</div>
                 <div class="row">                
                     <?php 
                     $types = sql_read("select * from category where status=1 order by position asc, id desc limit 8");
                     foreach($types as $type){?>
                     <div class="col-6 col-md-12 pt-1">
-                        <a href="#<?php echo ROOT?>type/<?php echo $str_convert->to_url($type['category'])?>" style="color:lightblue;"><?php echo $type['category']?></a>
+                        <a href="<?php echo ROOT?>vehicles/<?php echo $str_convert->to_url($type['category'])?>" style="color:lightblue;"><?php echo $type['category']?></a>
                     </div>
                     <?php }?>
                 </div>
@@ -51,7 +51,7 @@
                     <a href="https://www.facebook.com/" target="_blank">
                         <img src="<?php echo ROOT?>images/facebook-f.svg" width="14px" style="margin:10px">
                     </a>
-                    <a href="https://wa.me/60168653957" target="_blank">
+                    <a href="https://wa.me/60128072267" target="_blank">
                         <img src="<?php echo ROOT?>images/whatsapp.svg" width="20px" style="margin:10px">
                     </a>
                     <a href="#" target="_blank">
@@ -135,7 +135,7 @@
 
 <script>
 function change_title(title){
-    $('input[name=tour]').val(title);
+    $('input[name=vehicle]').val(title);
 }
 </script>
 
